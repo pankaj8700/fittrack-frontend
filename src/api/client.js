@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:8000";
+const API_BASE = "https://fittrack-backend-sp0h.onrender.com";
 
 function getAuthHeaders() {
   const token = localStorage.getItem("token");
