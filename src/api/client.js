@@ -1,4 +1,6 @@
-const API_BASE = "https://fittrack-backend-sp0h.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE;
+if (!API_BASE) throw new Error("VITE_API_BASE is not defined in .env");
+console.log("API_BASE:", API_BASE);
 
 function getAuthHeaders() {
   const token = localStorage.getItem("token");
